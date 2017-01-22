@@ -1,14 +1,7 @@
-
 body{
-	background-color: #ffefd5;
+	background-color: #f0ffff;
 	font-family: Verdana;
 	font-size:18px;
-}
-h1{
-	color:red;
-}
-p{
-	color:blue;
 }
 header{
 	text-align: right;
@@ -22,7 +15,7 @@ nav a:visited{
 	color: #2f4f4f;
 }
 a{
-	color:#008000;
+	color:#3cb371;
 	font-weight: bold;
 }
 a:visited{
@@ -37,8 +30,9 @@ a:visited{
 #Start{
 	font-size: 80px;
 	font-weight: bold;
-	color:#add8e6;
+	color:#66cdaa;
 }
 #web_list{
 	margin: 20px 0px 30px 60px;
+	color:ff69b4;
 }
