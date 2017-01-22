@@ -1,9 +1,44 @@
+
 body{
-	background-color: Powderblue;
+	background-color: #ffefd5;
+	font-family: Verdana;
+	font-size:18px;
 }
 h1{
 	color:red;
 }
 p{
-	coler:blue;
+	color:blue;
+}
+header{
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+nav a{
+	color:#20b2aa;
+}
+nav a:visited{
+	color: #2f4f4f;
+}
+a{
+	color:#008000;
+	font-weight: bold;
+}
+a:visited{
+	color: #2f4f4f;
+}
+#top_container{
+	margin: 0px 0px 20px 60px;
+}
+#info_container{
+	font-size: 20px;
+}
+#Start{
+	font-size: 80px;
+	font-weight: bold;
+	color:#add8e6;
+}
+#web_list{
+	margin: 20px 0px 30px 60px;
 }
