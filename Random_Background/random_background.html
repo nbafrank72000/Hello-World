@@ -4,15 +4,10 @@
 	<title>Random Background</title>
 	<link rel="stylesheet" href="random_background_style.css">
 	<script type="text/javascript">
-		//x = Math.floor(Math.Random() * 16777216);
-		//if (x >= 16777215) {x = 16777215};
-		//document.getElementById('content').style.color = 'red';
 		function genColor(){
 			return '#' + Math.random().toString(16).slice(2,8);
 		}
 		function changeBackgroundcolor(){
-			//document.getElementById('bodyid').style.backgroundColor = 'yellow';
-			//document.getElementById('bodyid').style.backgroundColor = '#7fff00';
 			document.getElementById('bodyid').style.backgroundColor = genColor();
 		}
 	</script>
