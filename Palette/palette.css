@@ -1,0 +1,40 @@
+header{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+	
+}
+nav a{
+	color: #ff8c00;
+}
+nav a:visited{
+	color: #8b4513;
+}
+body{
+	background-color: #808080;
+}
+#title{
+	font-size:35px;
+	font-weight: bold;
+	font-family: Impact;
+	text-align: center;
+	letter-spacing: 3px;
+}
+#container{
+	width: 1000px;
+	height: 500px;
+	position: center;
+	background-color: #e6e6fa;
+	margin: auto;
+	margin-top: 30px;
+	border: 5px solid #8b4513;
+	border-radius: 12px;
+	box-shadow: 7px 7px 3px #696969;
+}
+
+
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
