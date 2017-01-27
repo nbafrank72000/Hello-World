@@ -31,20 +31,103 @@ body{
 	border-radius: 12px;
 	box-shadow: 7px 7px 3px #696969;
 }
+/*Left part of container*/
 #palette_deck{
 	display: inline-block;
 	width: 200px;
 	height: 490px;
-	border-right: 1px solid black;
 }
+#circle_1{
+	position: relative;
+	left: 75px;
+	top: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #0000cd;
+}
+#circle_2{
+	position: relative;
+	left: 33px;
+	top: 80px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #3cb371;
+}
+#circle_3{
+	position: relative;
+	left: 117px;
+	top: 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #ff4500;
+}
+
+#circle_4{
+	position: relative;
+	left: 75px;
+	top: 70px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #ffa500;
+}
+#circle_5{
+	position: relative;
+	left: 33px;
+	top: 110px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #db7093;
+}
+#circle_6{
+	position: relative;
+	left: 117px;
+	top: 60px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #6a5acd;
+}
+#circle_7{
+	position: relative;
+	left: 75px;
+	top: 100px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #a0552d;
+}
+/*Medium part of container*/
+#gen_trigger{
+	display: inline-block;
+	width: 100px;
+	height: 490px;
+}
+#gen_btn{
+	position: relative;
+	left: 50px;
+	top: -240px;
+	width: 100px;
+	height: 60px;
+	text-align: center;
+	font-weight: bold;
+	border: 3px solid black;
+	border-radius: 12px;
+	box-shadow: 5px 5px 3px #696969;
+}
+/*Rignt part of container*/
 #tangram_paint{
 	display: inline-block;
-	width: 795px;
+	width: 691px;
 	height: 490px;
 }
 #tangram{
 	position: relative;
-	left: 198px;
+	left: 150px;
 	top: 50px;
 	width: 400px;
 	height: 400px;
@@ -116,69 +199,7 @@ body{
 	border-left: 200px solid transparent;
 	border-bottom: 200px solid #a0552d;
 }
-#circle_1{
-	position: relative;
-	left: 75px;
-	top: 25px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
-#circle_2{
-	position: relative;
-	left: 33px;
-	top: 100px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
-#circle_3{
-	position: relative;
-	left: 117px;
-	top: 100px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
-#circle_1{
-	position: relative;
-	left: 75px;
-	top: 25px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
-#circle_1{
-	position: relative;
-	left: 75px;
-	top: 25px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
-#circle_1{
-	position: relative;
-	left: 75px;
-	top: 25px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
-#circle_1{
-	position: relative;
-	left: 75px;
-	top: 25px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: blue;
-}
+
 
 
 
