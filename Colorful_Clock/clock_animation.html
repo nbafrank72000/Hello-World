@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colorful Clock</title>
+	<link rel="stylesheet" href="clock_animation.css">
+	<script type="text/javascript" src="clock_animation.js"></script>
+</head>
+
+<body id = "body" onload = "showTime(),color_change_smooth()">
+<!-- This part is for debug
+	<p id = "test">test</p>
+	<p id = "year">year</p>
+	<p id = "month">month</p>
+	<p id = "date">date</p>
+	<p id = "day">day</p>
+	<p id = "hour">hour</p>
+	<p id = "minute">minute</p>
+	<p id = "second">second</p>
+-->
+	<br>
+	<br>
+
+	<div id = info_container>
+		<div id = "day_result">day_result</div>
+		<div id = "time_result">time_result</div>
+		<br>
+		<button id = "switch_rule" onclick="switch_rule()">24H</button>
+	</div>
+
+</body>
+</html>
