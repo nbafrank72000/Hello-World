@@ -28,7 +28,7 @@ function showTime(){
 	}
 	else if(hour > 12){
 		if(rule == '12H'){
-			hour = hour - 1;
+			hour = hour - 12;
 		}
 	}
 
