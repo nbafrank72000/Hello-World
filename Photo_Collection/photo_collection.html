@@ -2,14 +2,20 @@
 <html>
 <head>
 	<title>Photo Collection</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="photo_collection.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="photo_collection.js"></script>
 </head>
 <body>
 <div id = "Call">Share a photo you like most? Let's do it!</div>
 <div id = "Asking">Choose the photo</div>
 
 <form>
-	<input type='file' onchange="readURL(this);">
-    <img id="photo" src="" alt="Your Photo">
+	<input type='file' onchange="readURL(this);"/>
+    <img id="photo" src="" alt="Your Photo"/>
 </form>
+
+<p id="test">12</p>
 </body>
 </html>
