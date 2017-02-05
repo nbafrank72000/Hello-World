@@ -1,0 +1,123 @@
+/*.....General style setting.....*/
+html{
+	font-size: 62.5%; /* default explorer font size 16px x 62.5% = 10px */
+}
+body{
+	font-size: 1.2rem; /*html's font size 10px x 1.2 = 12px */
+}
+*, *::after, *::before{
+	box-sizing: border-box; /*The width, height calculation will include padding, border, margin */
+}
+a:link, a:visited, a:hover, a:active{
+	text-decoration: none;
+}
+
+/*...................................*/
+/*.....  header style setting   .....*/
+/*...................................*/
+.header{
+	width: 100%;
+	padding: 28px 0 10px;
+	box-shadow: 0 0 10px 1px rgba(105,105,105,0.5);
+}
+/* Dog graphic by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a> */
+.logo{
+	width: 216px;
+	height: 46px;
+	margin: 0 auto;
+	background: url('./logo.png') no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.logo a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.global-nav{
+	margin-top: 15px;
+	text-align: center;
+}
+.global-nav .nav-item{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.global-nav .nav-item a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0 12px 0 12px;
+
+	text-align: center;
+	font-size: 1.3rem;
+	color: #28394d;
+	letter-spacing: 1px;
+
+	transition: 0.15s;
+}
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover{
+	background-color: #b22139;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/*...................................*/
+/*.....  wrapper style setting  .....*/
+/*...................................*/
+.wrapper{
+	width: 970px;
+	margin: 30px auto 40px;
+}
+
+/*...................................*/
+/*.....   main style setting    .....*/
+/*...................................*/
+.main{
+	display: block;
+	float: left;
+	width: 660px;
+}
+.hidden{
+	display: none;
+}
+
+/*...................................*/
+/*.....  sidemenu style setting .....*/
+/*...................................*/
+.sidemenu{
+	display: block;
+	float: right;
+	width: 275px;
+}
+
+
+/*...................................*/
+/*.....  footer style setting   .....*/
+/*...................................*/
+.footer{
+	width: 100%;
+}
+
+
+
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*
+.header, .main, .sidemenu, .footer{
+	border: 1px solid #2f4f4f;
+	background-color: #696969;
+}
+.header, .footer{
+	height: 100px;
+}
+.main, .sidemenu{
+	height: 500px;
+}*/
+
