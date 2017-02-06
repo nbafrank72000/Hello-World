@@ -4,6 +4,7 @@ html{
 }
 body{
 	font-size: 1.2rem; /*html's font size 10px x 1.2 = 12px */
+	-webkit-font-smoothing: antialiased;
 }
 *, *::after, *::before{
 	box-sizing: border-box; /*The width, height calculation will include padding, border, margin */
@@ -52,7 +53,7 @@ a:link, a:visited, a:hover, a:active{
 	border-radius: 0 12px 0 12px;
 
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	color: #28394d;
 	letter-spacing: 1px;
 
@@ -84,12 +85,133 @@ a:link, a:visited, a:hover, a:active{
 .hidden{
 	display: none;
 }
+/*...............................................*/
+/*.....   main / hot-topic style setting    .....*/
+/*...............................................*/
+.hot-topic{
+	display: block;
+	height: 330px;
+	box-shadow: 0 6px 4px -3px rgba(0,0,0,0.15);
+	transition: opacity 0.15s;
+	margin-bottom: 25px;  /* This is to make a space between hot-topic & latest part */
+}
+.hot-topic:hover{
+	opacity: 0.85;
+}
+.hot-topic .image{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.hot-topic .content{
+	float: right;
+	width: 50%;
+	height: 100%;
+	background-color: #ffb6c1;
+	line-height: 1.6;
+	position: relative; /* This is for class date to be put on the left of content */
+	padding: 105px 25px 0; /* This is for h3, p element in content */
+}
+.hot-topic .content .title{
+	color: #008b8b;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.hot-topic .content .desc{
+	color: #008b8b;
+	font-size: 1.7rem;
+}
+.hot-topic .content .date{
+	position: absolute;
+	left: 0px;
+	top: 60px;
+	width: 170px;
+	background-color: #008b8b;
+	color: #ffb6c1;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+/*............................................*/
+/*.....   main / latest style setting    .....*/
+/*............................................*/
+.heading{
+	background-color: #add8e6;
+	letter-spacing: 1px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 9px 14px;
+	border-radius: 12px;
+}
+.scroll-list{
+	max-height: 150px;
+	overflow-y: auto;
+	list-style-type: none;
+	margin-bottom: 25px;  /* This is to make a space between latest & article part */
+}
+.scroll-list .scroll-item a{
+	display: block; /* This is for a element to be applied link on whole a's area */
+	color: #a0522d;
+	padding: 10px 14px;
+	font-size: 0; /* This is for delete the space ocupied by the character between data, category & title */
+	border-radius: 12px;
+	transition: 0.15s;
+}
+.scroll-list .scroll-item:nth-of-type(even) a{
+	background-color: #add8e6;
+}
+.scroll-list .scroll-item a:hover{
+	border: 1px solid #00008b;
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.15);
+}
+.scroll-list .scroll-item .date{
+	display: inline-block;
+	width: 16%;
+	font-size: 1.4rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.scroll-list .scroll-item .category{
+	display: inline-block;
+	width: 12%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+	border-radius: 12px;
+	color: #ffffff;
+	line-height: 16px;
+}
+.scroll-list .scroll-item .category.cute{
+	background-color: #dc143c;
+}
+.scroll-list .scroll-item .category.boring{
+	background-color: #2f4f4f;
+}
+.scroll-list .scroll-item .category.lazy{
+	background-color: #008000;
+}
+.scroll-list .scroll-item .title{
+	display: inline-block;
+	width: 72%;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding-left: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 16px;
+}
+/*.............................................*/
+/*.....   main / article style setting    .....*/
+/*.............................................*/
 
 /*...................................*/
 /*.....  sidemenu style setting .....*/
 /*...................................*/
 .sidemenu{
-	display: block;
 	float: right;
 	width: 275px;
 }
