@@ -149,7 +149,7 @@ a:link, a:visited, a:hover, a:active{
 	max-height: 150px;
 	overflow-y: auto;
 	list-style-type: none;
-	margin-bottom: 25px;  /* This is to make a space between latest & article part */
+	margin-bottom: 5px;  /* This is to make a space between latest & article part */
 }
 .scroll-list .scroll-item a{
 	display: block; /* This is for a element to be applied link on whole a's area */
@@ -184,13 +184,13 @@ a:link, a:visited, a:hover, a:active{
 	color: #ffffff;
 	line-height: 16px;
 }
-.scroll-list .scroll-item .category.cute{
+.scroll-list .scroll-item .category.snack{
 	background-color: #dc143c;
 }
-.scroll-list .scroll-item .category.boring{
+.scroll-list .scroll-item .category.toy{
 	background-color: #2f4f4f;
 }
-.scroll-list .scroll-item .category.lazy{
+.scroll-list .scroll-item .category.can{
 	background-color: #008000;
 }
 .scroll-list .scroll-item .title{
@@ -207,7 +207,60 @@ a:link, a:visited, a:hover, a:active{
 /*.............................................*/
 /*.....   main / article style setting    .....*/
 /*.............................................*/
-
+.photo-box{
+	position: relative;
+	display: block;
+	width: 315px;
+	height: 380px;
+	margin-top: 25px;
+	padding: 315px 15px 0;
+	background-color: #ffe4e1;
+	border-radius: 5px;
+}
+.photo-box:hover{
+	border: 2px solid #cd5c5c;
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.15);
+}
+.photo-box:nth-of-type(odd){
+	float: left;
+}
+.photo-box:nth-of-type(even){
+	float: right;
+}
+.photo-box .title{
+	margin-top: 8px;
+	color: #191970;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+.photo-box .desc{
+	margin-top: 5px;
+	font-size: 1.3rem;
+	color: #4169e1;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.photo-box .date{
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+	display: block;
+	width: 130px;
+	background-color: #008b8b;
+	color: #f08080;
+	padding: 2px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.photo-box .image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 /*...................................*/
 /*.....  sidemenu style setting .....*/
 /*...................................*/
