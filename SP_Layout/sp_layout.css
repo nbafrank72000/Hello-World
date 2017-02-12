@@ -1,0 +1,109 @@
+/*.....  General Setting   .....*/
+html{
+	font-size: 62.5%;
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+/*..... body setting .....*/
+body{
+	/*background: #151515 url('./image/beach.png') no-repeat fixed left bottom;
+	background-size: cover;*/
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/*..........................*/
+/*..... header setting .....*/
+/*..........................*/
+
+.header{
+	padding: 250px 30px 80px;
+	background: #151515 url('./image/beach.png') no-repeat left top;
+}
+.start-sentence-sub{
+	margin: 0 0 0px;
+	letter-spacing: 1px;
+	font-size: 2.2rem;
+}
+.start-sentence-sub::before,
+.start-sentence-sub::after{
+	content: '';
+	display: inline-block;
+	width: 140px;
+	height: 2px;
+	margin: 0 30px;
+	background-color: #ffffff;
+	vertical-align: middle;
+}
+.start-sentence{
+	margin: 10px 0 10px;
+	font-size: 4.5rem;
+}
+.introduction{
+	margin: 0 0 50px;
+	font-size: 1.4rem;
+}
+.button{
+	display: block;
+	margin: auto;
+	width: 170px;
+	background-color: #afa58d;
+	background-color: #f1b400;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 4px;
+	opacity: 0.75;
+}
+.button:hover{
+	opacity: 1;
+}
+
+/*.............................*/
+/*..... overture setting ......*/
+/*.............................*/
+.overture{
+	padding-top: 400px;
+	background: url('./image/overture.png') no-repeat left top;
+	color: #c0c0c0;
+	/*background-color: #fff;
+	color: #333;*/
+}
+.overture-start{
+	position: relative;
+	display: inline-block;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+	font-size: 4rem;
+	border-bottom: 1px solid #999;
+}
+.overture-start::before,
+.overture-start::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #999;
+}
+.overture-start::after{
+	bottom: 5px;
+}
+
+/*..........................*/
+/*..... footer setting .....*/
+/*..........................*/
+.footer{
+	padding: 12px 0;
+	font-size: 1.3rem;
+}
+
+
+
