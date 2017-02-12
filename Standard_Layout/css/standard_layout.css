@@ -26,7 +26,7 @@ a:link, a:visited, a:hover, a:active{
 	width: 216px;
 	height: 46px;
 	margin: 0 auto;
-	background: url('./logo.png') no-repeat;
+	background: url('../image/logo.png') no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
