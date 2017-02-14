@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
 	<meta charset="utf-8">
 	<title>Single Page Layout</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="sp_layout.css">
+	<script type="text/javascript" src="modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="sp_layout.js"></script>
 </head>
 <body>
 	<header class = "header">
@@ -17,6 +20,10 @@
 		</div>
 	</header>
 	<section class = "overture" id = "overture">
+		<img src="./image/overture.png" alt="overture" width="1222" height="585">
+		<img src="./image/slide1.png" alt="slide1" width="1222" height="585">
+		<img src="./image/slide2.png" alt="slide2" width="1222" height="585">
+		<img src="./image/slide3.png" alt="slide3" width="1222" height="585">
 		<h2 class = "overture-start">INVISIBLE SPARK</h2>
 	</section>
 	<section class = "first_face">
@@ -29,7 +36,10 @@
 
 	</section>
 	<footer class = "footer">
-		®Frank & Ivy
+		<div class = "announce">®Frank & Ivy</div>
+		<!--<button onclick = "backToTop()" class = "back-to-top">
+			<span class = "label">Back to home</span>
+		</button>-->
 	</footer>
 </body>
 </html>

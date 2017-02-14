@@ -22,7 +22,7 @@ body{
 
 .header{
 	padding: 250px 30px 80px;
-	background: #151515 url('./image/beach.png') no-repeat left top;
+	background: #151515 url('./image/beach.png') no-repeat fixed left top;
 }
 .start-sentence-sub{
 	margin: 0 0 0px;
@@ -47,6 +47,9 @@ body{
 	margin: 0 0 50px;
 	font-size: 1.4rem;
 }
+.buttons{
+	padding-bottom: 42px;
+}
 .button{
 	display: block;
 	margin: auto;
@@ -61,6 +64,7 @@ body{
 	padding: 15px;
 	border-radius: 4px;
 	opacity: 0.75;
+	transition: 0.15s;
 }
 .button:hover{
 	opacity: 1;
@@ -70,12 +74,25 @@ body{
 /*..... overture setting ......*/
 /*.............................*/
 .overture{
-	padding-top: 400px;
-	background: url('./image/overture.png') no-repeat left top;
-	color: #c0c0c0;
+	/*padding-top: 465px;
+	background: #0000ff url('./image/overture.png') no-repeat left top;
+	color: #c0c0c0;*/
 	/*background-color: #fff;
 	color: #333;*/
+	height: 585px;
+	overflow: hidden;
+	position: relative;
 }
+.overture img{
+	display: none;
+	left: 50%;
+	margin-left: -611px;
+	position: absolute;
+}
+.no-js .overture img:first-child {
+    display: inline;
+}
+
 .overture-start{
 	position: relative;
 	display: inline-block;
@@ -101,8 +118,13 @@ body{
 /*..... footer setting .....*/
 /*..........................*/
 .footer{
+	background-color: #151515;
 	padding: 12px 0;
 	font-size: 1.3rem;
+}
+.announce{
+	margin: 0 10px 0 0;
+	text-align: right;
 }
 
 
