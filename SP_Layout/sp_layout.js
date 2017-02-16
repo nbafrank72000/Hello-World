@@ -6,7 +6,7 @@ $(function(){
 
 	    $slides.eq(currentIndex).fadeIn();
 
-	    setInterval(showNextSlide, 6000);
+	    setInterval(showNextSlide, 5000);
 
 	    function showNextSlide(){
 	    	var nextIndex = (currentIndex + 1) % slideCount;
@@ -21,7 +21,15 @@ $(function(){
 	    	}
 	    }
 	})
+	$('.ff-img').hover(function(){
+		//load img's alt to li element
+		$(this).append("<div><p>" + $(this).children('img').attr('alt') + "</p></div>");
+		$(this).children('div').fadeIn(300);
+		$(this).children('div').children('p').animate({top: '0px'}, 300);
+	}, function(){
+		$(this).children('div').fadeOut(300);
+		$(this).children('div').children('p').animate({top: '10px'}, 300, function(){ 
+																			$(this).parent('div').remove();
+																		});
+	});
 })
-function scrollToThere(){
-		$('.overture').scrollTo();
-}

@@ -21,8 +21,8 @@ body{
 /*..........................*/
 
 .header{
-	padding: 250px 30px 80px;
-	background: #151515 url('./image/beach.png') no-repeat fixed left top;
+	padding: 250px 30px 69px;
+	background: #151515 url('../image/beach.png') no-repeat  left top;
 }
 .start-sentence-sub{
 	margin: 0 0 0px;
@@ -45,7 +45,8 @@ body{
 }
 .introduction{
 	margin: 0 0 50px;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
 }
 .buttons{
 	padding-bottom: 42px;
@@ -79,7 +80,8 @@ body{
 	color: #c0c0c0;*/
 	/*background-color: #fff;
 	color: #333;*/
-	height: 585px;
+	height: 400px;
+	width: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -93,16 +95,22 @@ body{
     display: inline;
 }
 
-.overture-start{
-	position: relative;
+/*............................*/
+/*..... entrance setting .....*/
+/*............................*/
+.entrance{
+	height: 184px;
+	background-color: #151515;
+}
+.entrance-start{
 	display: inline-block;
-	padding-bottom: 5px;
+	margin-top: 10px;
 	letter-spacing: 2px;
 	font-size: 4rem;
 	border-bottom: 1px solid #999;
 }
-.overture-start::before,
-.overture-start::after{
+.entrance-start::before,
+.entrance-start::after{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -110,8 +118,45 @@ body{
 	bottom: 0;
 	border-bottom: 1px solid #999;
 }
-.overture-start::after{
-	bottom: 5px;
+
+/*..............................*/
+/*..... first-face setting .....*/
+/*..............................*/
+.first-face{
+	display: block;
+	width: 100%;
+	height: 390px;
+	background-color: #ffb6c1;
+	padding: 0px;
+	margin: 0;
+}
+.first-face ul{
+	margin: 0px;
+	padding: 0px;
+}
+.first-face li{
+	position: relative;
+	float: left;
+	width: 218px;
+	height: 290px;
+	margin: 50px 0 50px;
+	color: #ffffff;
+	line-height: 2rem;
+	list-style-type: none;
+}
+.first-face div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	background-color: rgba(17, 179, 179, 0.7);
+}
+.first-face p{
+	position: relative;
+	top: 10px;
+	letter-spacing: 2px;
 }
 
 /*..........................*/
