@@ -32,4 +32,15 @@ $(function(){
 																			$(this).parent('div').remove();
 																		});
 	});
+	$('.hover-area').hover(function(){
+		$(this).parent('.relationship-container').children('.travel-content').css('border', '10px solid #ff7f50');
+		$(this).parent('.relationship-container').children('.travel-content').css('color', '#ff7f50');
+		$(this).parent('.relationship-container').children('.travel-content').css('top', '0px');
+		$(this).parent('.relationship-container').children('.travel-content').children('.travel-content-button').append("<div>MEMORY</div>");
+	}, function(){
+		$(this).parent('.relationship-container').children('.travel-content').css('border', '10px solid rgba(0, 0, 0, 0)');
+		$(this).parent('.relationship-container').children('.travel-content').css('color', '#2f4f4f');
+		$(this).parent('.relationship-container').children('.travel-content').css('top', '50px');
+		$(this).parent('.relationship-container').children('.travel-content').children('.travel-content-button').children('div').remove();
+	});
 })
