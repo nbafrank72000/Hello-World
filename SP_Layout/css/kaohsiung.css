@@ -1,0 +1,68 @@
+html{
+	font-size: 62.5%;
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+body{
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+.header{
+	background: url('../image/kaohsiung/boat.png') left bottom;
+	padding: 250px 0 0;
+	width: 100%;
+	height: 576px;
+}
+.place{
+	margin: auto;
+	font-size: 6rem;
+	font-family: arial black;
+	letter-spacing: 7px;
+}
+.date{
+	margin: auto;
+	margin-top: 10px;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+.date::after,
+.date::before{
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 1px;
+	margin: 10px;
+	background-color: #ffffff;
+	vertical-align: middle;
+}
+.box-limit{
+	padding: 20px 100px 0;
+	widows: 100%;
+	height: 420px;
+}
+.box-expand{
+	padding: 20px 0 0 0;
+}
+.left-tall{
+	float: left;
+	margin: 0 0 0;
+	width: 300px;
+	height: 400px;
+}
+.right-wide-text{
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 30px 20px;
+	width: 560px;
+	height: 400px;
+	background-color: #000000;
+}
+.overwide-photo{
+	width: 1092px;
+	height: 576px;
+}
+
