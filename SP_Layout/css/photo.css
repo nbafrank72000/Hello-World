@@ -1,0 +1,133 @@
+html{
+	font-size: 62.5%;
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+body{
+	color: #ffffff;
+	/*background-color: #c3d1e0;*/
+	background-color: #2f4f4f;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+.header_ks{
+	background: url('../image/kaohsiung/boat.jpg') left bottom;
+	width: 100%;
+	height: 576px;
+}
+.header_hy{
+	background: url('../image/hualienyilan/sea.jpg') left bottom;
+	width: 100%;
+	height: 576px;
+}
+.header_tc{
+	background: url('../image/taichungchanghua/rainbow.jpg') left bottom;
+	width: 100%;
+	height: 576px;
+}
+.mask{
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 576px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.place{
+	z-index: 2;
+	position: absolute;
+	top: 250px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	font-size: 6rem;
+	font-family: arial black;
+	letter-spacing: 7px;
+}
+.date{
+	z-index: 2;
+	position: absolute;
+	top: 320px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+.date::after,
+.date::before{
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 1px;
+	margin: 10px;
+	background-color: #ffffff;
+	vertical-align: middle;
+}
+.box-three-tall{
+	padding: 40px 75px 0;
+	width: 100%;
+	height: 440px;
+}
+.box-limit{ /* W:100% x H:400+40=440 */
+	padding: 40px 110px 0;
+	width: 100%;
+	height: 440px;
+}
+.box-expand{ /* W:100% x H:576+40=606 */
+	padding: 40px 0 0 0;
+	width: 100%;
+	height: 616px;
+}
+.text-box-expand{
+	padding: 40px 0 0 0;
+	width: 100%;
+	height: 200px;
+}
+.left-tall{ /* W:3oo x H:400 */
+	float: left;
+	margin: 0 0 0;
+	width: 300px;
+	height: 400px;
+}
+.left-wide{ /* W:533 x H:400 */
+	float: left;
+	margin: 0 0 0;
+	width: 533px;
+	height: 400px;
+}
+.right-tall{ /* W:300 x H:400 */
+	float: left;
+	margin: 0 0 0 20px;
+	width: 300px;
+	height: 400px;
+}
+.right-wide{ /* W:533 x H:400 */
+	float: left;
+	margin: 0 0 0 20px;
+	width: 533px;
+	height: 400px;
+}
+.overwide-photo{ /* W:1092 x H:576 */
+	width: 1092px;
+	height: 576px;
+}
+.overwide-text{
+	margin: 15px 140px;
+	width: 812px;
+	height: 130px;
+	background-color: #000000;
+}
+.right-wide-text{
+	float: left;
+	margin-left: 20px;
+	padding: 30px 20px;
+	width: 533px;
+	height: 400px;
+	background-color: #000000;
+}
